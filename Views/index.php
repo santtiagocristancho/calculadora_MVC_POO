@@ -51,6 +51,7 @@ $registros = $datos->getAll();
             <table class="table">
                 <thead>
                     <tr>
+                        <h2>sdsa</h2>
                         <th scope="col">#</th>
                         <th scope="col">Primer Numero</th>
                         <th scope="col">Segundo Numero</th>
