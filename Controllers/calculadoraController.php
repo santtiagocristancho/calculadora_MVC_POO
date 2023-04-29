@@ -6,6 +6,7 @@ $calculadora = new calculadoraController;
 
 class CalculadoraController
 {
+    
     private $calculadora;
 
     public function __construct()
@@ -78,8 +79,8 @@ class CalculadoraController
 
         if ($result) {
             header("Location: ../Views/index.php");
-            exit();
         }
+        exit();
 
         return $result;
     }
