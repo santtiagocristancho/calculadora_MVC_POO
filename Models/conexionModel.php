@@ -7,13 +7,13 @@ class Database
     private $user;
     private $password;
     private $charset;
-
+ 
     public function __construct()
     {
-        $this->host     = constant('localhost');
-        $this->db       = constant('db_calculadora');
-        $this->user     = constant('root');
-        $this->password = constant('root');
+        $this->host     = constant('HOST');
+        $this->db       = constant('DB');
+        $this->user     = constant('USER');
+        $this->password = constant('PASSWORD');
         $this->charset  = constant('CHARSET');
     }
 
