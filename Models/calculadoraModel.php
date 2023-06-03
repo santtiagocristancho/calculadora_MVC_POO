@@ -56,7 +56,8 @@ class CalculadoraModel extends stdClass
 
         try {
 
-            $sql = 'SELECT operaciones.id, operaciones.n1, operaciones.n2, operacion.nombre AS operacion, operaciones.resultado FROM operaciones JOIN operacion ON operaciones.operacion = operacion.id';
+            $sql = 'SELECT operaciones.id, operaciones.n1, operaciones.n2, operacion.nombre AS operacion, operaciones.resultado FROM operaciones 
+            JOIN operacion ON operaciones.operacion = operacion.id';
             $query  = $this->db->conect()->query($sql);
 
 

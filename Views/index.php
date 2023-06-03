@@ -20,7 +20,7 @@ $registros = $datos->getAll();
 
 <body class="m-3">
     <div class="container">
-        
+
         <div class="row">
             <div class="col">
                 <h1>Calculadora</h1>
@@ -66,6 +66,7 @@ $registros = $datos->getAll();
                         foreach ($registros as $row) {
 
                     ?>
+                    
                             <tr>
 
                                 <td><?= $row->id ?></td>
@@ -74,13 +75,13 @@ $registros = $datos->getAll();
                                 <td><?= $row->operacion ?></td>
                                 <td><?= $row->resultado ?></td>
                                 <!-- <th scope="col" >Opciones</th> -->
-                            
-                            <td>
-                                <a class="btn btn-sm btn-outline-warning" href="../Controllers/calculadoraController.php?c=2&id=<?= $row->getId() ?>">Actualizar</a>
-                            </td>
-                            <td>
-                                <a class="btn btn-sm btn-outline-danger " href="../Controllers/calculadoraController.php?c=4&id=<?= $row->getId() ?>">Eliminar</a>
-                            </td>
+
+                                <td>
+                                    <a class="btn btn-sm btn-outline-warning" href="../Controllers/calculadoraController.php?c=2&id=<?= $row->getId() ?>">Actualizar</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-sm btn-outline-danger " href="../Controllers/calculadoraController.php?c=4&id=<?= $row->getId() ?>">Eliminar</a>
+                                </td>
                             </tr>
                         <?php
                         }

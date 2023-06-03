@@ -43,6 +43,7 @@ class CalculadoraController
     
     public function store()
     {
+        
         $datos = [
             'n1' => $_REQUEST['n1'],
             'n2' => $_REQUEST['n2'],
